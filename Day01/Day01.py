@@ -3,7 +3,7 @@ with open("Day01.txt", "r") as f:
 
 elfs = []
 max = 0
-lucena = []
+calories = []
 
 #FILTRANDO \n:
 
@@ -15,25 +15,27 @@ for e in range(len(txt)):
         #ATÉ AQUI FUNCIONA!
         max += txt[e]
     else:
-        lucena.append(max)
+        calories.append(max)
         max = 0
         pass
     #ATÉ AQUI, O CÓDIGO EXIBE NA LISTA LUCENA,
     #QUANTAS CALORIAS OS ELFOS POSSUEM 
 
 #SOLUTION FOR PART 1:
-# maior = 0
+bigger = 0
 
-# for e in range(len(lucena)):
-#     if(lucena[e] > maior):
-#         maior = lucena[e]
+# for e in range(len(calories)):
+#     if(calories[e] > bigger):
+#         bigger = calories[e]
 
-#print(maior)  71471
+#print(bigger)  71471
 #####################
 
 ##### PART 2 SOLUTION #####
-lucena.sort(reverse=True)
+calories.sort(reverse=True)
 for e in range(3):
-    print(lucena[e](sum))
+    bigger += calories[e]
+
+print(bigger)
 ###########################
 
