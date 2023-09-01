@@ -18,22 +18,12 @@ for e in range(len(txt)):
         max = 0
         pass
     
-
 #SOLUTION FOR PART 1:
-#bigger = 0
 
 calories.sort(reverse=True)
 print(calories[0]) #71471
-
-# for e in range(len(calories)):
-#     if(calories[e] > bigger):
-#         bigger = calories[e]
-
-#print(bigger)  71471
-#####################
+##############################
 
 ##### PART 2 SOLUTION ##### 211189
-#
-#print(sum(calories[:3]))
+print(sum(calories[:3]))
 ###########################
-
