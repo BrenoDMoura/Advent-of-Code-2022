@@ -2,7 +2,7 @@ with open("Day01.txt", "r") as f:
     txt = f.readlines()
 
 elfs = []
-max = 0
+Sum = 0
 calories = []
 
 #REMOVING \n:
@@ -12,14 +12,12 @@ for e in range(len(txt)):
     
     if(txt[e] != ""):
         txt[e] = int(txt[e])
-        max += txt[e]
+        Sum += txt[e]
     else:
-        calories.append(max)
-        max = 0
-        pass
+        calories.append(Sum)
+        Sum = 0
     
 #SOLUTION FOR PART 1:
-
 calories.sort(reverse=True)
 print(calories[0]) #71471
 ##############################
